@@ -7,9 +7,9 @@
 package io.javalin.examples;
 
 import io.javalin.Javalin;
-import static io.javalin.apibuilder.ApiBuilder.get;
-import static io.javalin.apibuilder.ApiBuilder.patch;
-import static io.javalin.apibuilder.ApiBuilder.post;
+import static io.javalin.apibuilder.HboIct.get;
+import static io.javalin.apibuilder.HboIct.patch;
+import static io.javalin.apibuilder.HboIct.post;
 
 public class HelloWorldCors {
 

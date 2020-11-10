@@ -19,11 +19,11 @@ import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
-import static io.javalin.apibuilder.ApiBuilder.after;
-import static io.javalin.apibuilder.ApiBuilder.before;
-import static io.javalin.apibuilder.ApiBuilder.crud;
-import static io.javalin.apibuilder.ApiBuilder.get;
-import static io.javalin.apibuilder.ApiBuilder.path;
+import static io.javalin.apibuilder.HboIct.after;
+import static io.javalin.apibuilder.HboIct.before;
+import static io.javalin.apibuilder.HboIct.crud;
+import static io.javalin.apibuilder.HboIct.get;
+import static io.javalin.apibuilder.HboIct.path;
 
 @BenchmarkOptions(benchmarkRounds = 35000, warmupRounds = 5000, concurrency = 4, clock = Clock.NANO_TIME)
 public class SimplePerformanceTest {

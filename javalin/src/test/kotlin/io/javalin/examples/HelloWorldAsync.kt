@@ -7,7 +7,7 @@
 package io.javalin.examples
 
 import io.javalin.Javalin
-import io.javalin.apibuilder.ApiBuilder.get
+import io.javalin.apibuilder.HboIct.get
 import java.util.*
 import java.util.concurrent.CompletableFuture
 import java.util.concurrent.Executors

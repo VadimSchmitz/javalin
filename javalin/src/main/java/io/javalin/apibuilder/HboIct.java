@@ -25,7 +25,7 @@ import org.jetbrains.annotations.NotNull;
  *
  * @see Javalin#routes(EndpointGroup)
  */
-public class ApiBuilder {
+public class HboIct {
 
     private static Javalin staticJavalin;
     private static Deque<String> pathDeque = new ArrayDeque<>();
@@ -468,7 +468,7 @@ public class ApiBuilder {
      * @see CrudHandler
      */
     public static void crud(@NotNull String path, @NotNull CrudHandler crudHandler) {
-        ApiBuilder.crud(path, crudHandler, new HashSet<>());
+        HboIct.crud(path, crudHandler, new HashSet<>());
     }
 
     /**

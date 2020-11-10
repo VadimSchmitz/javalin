@@ -6,7 +6,7 @@
 package io.javalin.plugin.openapi
 
 import io.javalin.Javalin
-import io.javalin.apibuilder.ApiBuilder.crud
+import io.javalin.apibuilder.HboIct.crud
 import io.javalin.apibuilder.CrudHandler
 import io.javalin.http.Context
 import io.javalin.http.Handler

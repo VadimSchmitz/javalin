@@ -9,16 +9,16 @@ package io.javalin
 
 import com.mashape.unirest.http.HttpMethod
 import com.mashape.unirest.http.Unirest
-import io.javalin.apibuilder.ApiBuilder
-import io.javalin.apibuilder.ApiBuilder.after
-import io.javalin.apibuilder.ApiBuilder.before
-import io.javalin.apibuilder.ApiBuilder.crud
-import io.javalin.apibuilder.ApiBuilder.delete
-import io.javalin.apibuilder.ApiBuilder.get
-import io.javalin.apibuilder.ApiBuilder.patch
-import io.javalin.apibuilder.ApiBuilder.path
-import io.javalin.apibuilder.ApiBuilder.post
-import io.javalin.apibuilder.ApiBuilder.put
+import io.javalin.apibuilder.HboIct
+import io.javalin.apibuilder.HboIct.after
+import io.javalin.apibuilder.HboIct.before
+import io.javalin.apibuilder.HboIct.crud
+import io.javalin.apibuilder.HboIct.delete
+import io.javalin.apibuilder.HboIct.get
+import io.javalin.apibuilder.HboIct.patch
+import io.javalin.apibuilder.HboIct.path
+import io.javalin.apibuilder.HboIct.post
+import io.javalin.apibuilder.HboIct.put
 import io.javalin.apibuilder.CrudHandler
 import io.javalin.http.Context
 import io.javalin.http.Handler
@@ -28,7 +28,7 @@ import org.assertj.core.api.Assertions.assertThat
 import org.assertj.core.api.Assertions.assertThatExceptionOfType
 import org.junit.Test
 
-class TestApiBuilder {
+class TestHboIct {
 
     @Test
     fun `ApiBuilder prefixes paths with slash`() = TestUtil.test { app, http ->
@@ -117,7 +117,7 @@ class TestApiBuilder {
     @Test
     fun `ApiBuilder throws if used outside of routes{} call`() = TestUtil.test { _, _ ->
         assertThatExceptionOfType(IllegalStateException::class.java)
-                .isThrownBy { ApiBuilder.get("/") { ctx -> ctx.result("") } }
+                .isThrownBy { HboIct.get("/") { ctx -> ctx.result("") } }
                 .withMessageStartingWith("The static API can only be used within a routes() call.")
     }
 

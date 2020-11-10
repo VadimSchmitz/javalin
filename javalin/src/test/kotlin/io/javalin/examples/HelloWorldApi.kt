@@ -7,8 +7,8 @@
 package io.javalin.examples
 
 import io.javalin.Javalin
-import io.javalin.apibuilder.ApiBuilder.get
-import io.javalin.apibuilder.ApiBuilder.path
+import io.javalin.apibuilder.HboIct.get
+import io.javalin.apibuilder.HboIct.path
 
 fun main(args: Array<String>) {
 

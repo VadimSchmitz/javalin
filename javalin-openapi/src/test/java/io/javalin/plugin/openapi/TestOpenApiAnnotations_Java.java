@@ -1,7 +1,7 @@
 package io.javalin.plugin.openapi;
 
 import io.javalin.Javalin;
-import io.javalin.apibuilder.ApiBuilder;
+import io.javalin.apibuilder.HboIct;
 import io.javalin.apibuilder.CrudHandler;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
@@ -301,7 +301,7 @@ public class TestOpenApiAnnotations_Java {
         );
         Javalin app = Javalin.create(config -> config.registerPlugin(new OpenApiPlugin(openApiOptions)));
 
-        app.routes(() -> ApiBuilder.crud("users/:user-id", new JavaCrudHandler()));
+        app.routes(() -> HboIct.crud("users/:user-id", new JavaCrudHandler()));
 
         OpenAPI actual = JavalinOpenApi.createSchema(app);
         assertThat(JsonKt.asJsonString(actual)).isEqualTo(JsonKt.getCrudExampleJson());

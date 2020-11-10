@@ -7,8 +7,8 @@
 package io.javalin.examples
 
 import io.javalin.Javalin
-import io.javalin.apibuilder.ApiBuilder.get
-import io.javalin.apibuilder.ApiBuilder.path
+import io.javalin.apibuilder.HboIct.get
+import io.javalin.apibuilder.HboIct.path
 import io.javalin.core.security.Role
 import io.javalin.core.security.SecurityUtil.roles
 import io.javalin.examples.HelloWorldAuth.MyRoles.ROLE_ONE

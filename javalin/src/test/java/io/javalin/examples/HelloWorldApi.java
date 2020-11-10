@@ -8,8 +8,8 @@
 package io.javalin.examples;
 
 import io.javalin.Javalin;
-import static io.javalin.apibuilder.ApiBuilder.get;
-import static io.javalin.apibuilder.ApiBuilder.path;
+import static io.javalin.apibuilder.HboIct.get;
+import static io.javalin.apibuilder.HboIct.path;
 
 public class HelloWorldApi {
 

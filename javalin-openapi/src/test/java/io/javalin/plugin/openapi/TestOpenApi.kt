@@ -20,7 +20,7 @@ import cc.vileda.openapi.dsl.tag
 import com.fasterxml.jackson.databind.SerializationFeature
 import com.mashape.unirest.http.Unirest
 import io.javalin.Javalin
-import io.javalin.apibuilder.ApiBuilder.crud
+import io.javalin.apibuilder.HboIct.crud
 import io.javalin.apibuilder.CrudHandler
 import io.javalin.http.Context
 import io.javalin.plugin.openapi.annotations.ContentType

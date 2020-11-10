@@ -15,12 +15,12 @@ import io.javalin.websocket.WsHandler;
 import static io.javalin.TestAccessManager.MyRoles.ROLE_ONE;
 import static io.javalin.TestAccessManager.MyRoles.ROLE_THREE;
 import static io.javalin.TestAccessManager.MyRoles.ROLE_TWO;
-import static io.javalin.apibuilder.ApiBuilder.crud;
-import static io.javalin.apibuilder.ApiBuilder.delete;
-import static io.javalin.apibuilder.ApiBuilder.get;
-import static io.javalin.apibuilder.ApiBuilder.patch;
-import static io.javalin.apibuilder.ApiBuilder.path;
-import static io.javalin.apibuilder.ApiBuilder.post;
+import static io.javalin.apibuilder.HboIct.crud;
+import static io.javalin.apibuilder.HboIct.delete;
+import static io.javalin.apibuilder.HboIct.get;
+import static io.javalin.apibuilder.HboIct.patch;
+import static io.javalin.apibuilder.HboIct.path;
+import static io.javalin.apibuilder.HboIct.post;
 import static io.javalin.core.security.SecurityUtil.roles;
 
 public class VisualTest {

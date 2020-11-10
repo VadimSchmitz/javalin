@@ -7,7 +7,7 @@
 
 package io.javalin;
 
-import io.javalin.apibuilder.ApiBuilder;
+import io.javalin.apibuilder.HboIct;
 import io.javalin.apibuilder.EndpointGroup;
 import io.javalin.core.JavalinConfig;
 import io.javalin.core.JavalinServer;
@@ -249,12 +249,12 @@ public class Javalin {
      * Allows you to call get(handler), post(handler), etc. without without using the instance prefix.
      *
      * @see <a href="https://javalin.io/documentation#handler-groups">Handler groups in documentation</a>
-     * @see ApiBuilder
+     * @see HboIct
      */
     public Javalin routes(@NotNull EndpointGroup endpointGroup) {
-        ApiBuilder.setStaticJavalin(this);
+        HboIct.setStaticJavalin(this);
         endpointGroup.addEndpoints();
-        ApiBuilder.clearStaticJavalin();
+        HboIct.clearStaticJavalin();
         return this;
     }
 

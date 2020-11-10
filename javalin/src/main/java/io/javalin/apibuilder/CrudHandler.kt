@@ -13,7 +13,7 @@ import io.javalin.http.Handler
  * The CrudHandler is an interface for handling the five most
  * common CRUD operations. It's only available through the ApiBuilder.
  *
- * @see ApiBuilder
+ * @see HboIct
  */
 interface CrudHandler {
     fun getAll(ctx: Context)

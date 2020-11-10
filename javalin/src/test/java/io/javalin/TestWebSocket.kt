@@ -7,7 +7,7 @@
 package io.javalin
 
 import com.mashape.unirest.http.Unirest
-import io.javalin.apibuilder.ApiBuilder.ws
+import io.javalin.apibuilder.HboIct.ws
 import io.javalin.core.util.Header
 import io.javalin.http.UnauthorizedResponse
 import io.javalin.plugin.json.JavalinJson
